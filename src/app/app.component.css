@@ -1,0 +1,178 @@
+* {
+    list-style: none;
+}
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    padding: 6px;
+}
+
+.right-toolbar-menu {
+    margin-right: 6px;
+    margin-left: 6px;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.center-navbar-menu{
+    /* margin-right: 6px; */
+    margin-left: 6px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.mg-left{
+    margin-left: 6px;
+}
+
+.mg-right{
+    margin-right: 6px;
+}
+
+.left-toolbar-menu{
+    margin-right: 6px;
+    margin-left: 6px;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 8px;
+}
+
+.toolbar img {
+    margin: 0 16px;
+}
+
+a,
+a:visited,
+a:hover {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #125699;
+}
+
+a {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+/* search button Css */
+.row {
+    margin: 10px;
+}
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+input {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+    display: table-cell;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    margin: 0;
+}
+
+.presuffix input {
+    border-radius: 15px 0px 0px 15px;
+}
+.input-group-addon.suffix {
+    border-radius: 0px 15px 15px 0px;
+    border-left: 0;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.sidebar{
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    margin-top: 150px;
+    margin-left: -30px;
+    display: flex;
+    margin-left: -100%;
+    transition: all 0,5 ease;
+}
+
+.sidebar-display{
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    margin-top: 150px;
+    margin-left: -30px;
+    display: flex;
+    margin-left: 0px;
+    transition: all 0,5 ease;
+}
+
+.sidebar ul li {
+    margin: 25px 0px;
+}
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+
+    .toolbar{
+        padding: 0;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    .sidebar ul li {
+        margin: 25px 0px;
+    }
+
+
+}
